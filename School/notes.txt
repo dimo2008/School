@@ -1,0 +1,24 @@
+﻿subjects:
+1- classes
+2- labs
+3- playground
+4- managers' rooms
+5- teachers' rooms
+6- bathrooms
+---------------------
+people:
+1- student
+	-name -phone - email - age - stage - birthdate - address  - last year's GPA - total GPA 
+2- teachers
+3- managers
+4- workers
+5- security
+
+
+string -char  - int - double - float 
+Model
+View 
+Controller 
+
+code first approach
+database first approach
