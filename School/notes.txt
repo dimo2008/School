@@ -22,3 +22,8 @@ Controller
 
 code first approach
 database first approach
+
+CRUD
+create
+Update
+Delete

@@ -128,9 +128,20 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Data\SchoolContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\SchoolMigrations\202009021754388_Initial Migrations.cs" />
+    <Compile Include="Migrations\SchoolMigrations\202009021754388_Initial Migrations.designer.cs">
+      <DependentUpon>202009021754388_Initial Migrations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\SchoolMigrations\202009021809146_Teacher Relation to class.cs" />
+    <Compile Include="Migrations\SchoolMigrations\202009021809146_Teacher Relation to class.designer.cs">
+      <DependentUpon>202009021809146_Teacher Relation to class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\SchoolMigrations\Configuration.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Teacher.cs" />
@@ -173,6 +184,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Students\Create.cshtml" />
+    <Content Include="Views\Students\Delete.cshtml" />
+    <Content Include="Views\Students\Details.cshtml" />
+    <Content Include="Views\Students\Edit.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -189,6 +205,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\SchoolMigrations\202009021754388_Initial Migrations.resx">
+      <DependentUpon>202009021754388_Initial Migrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\SchoolMigrations\202009021809146_Teacher Relation to class.resx">
+      <DependentUpon>202009021809146_Teacher Relation to class.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

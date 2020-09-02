@@ -7,6 +7,7 @@ namespace School.Models
 {
     public class Student
     {
+        public int StudentId { get; set; }
        public string Name { get; set; }
        public string Gender { get; set; }
        public string Phone { get; set; }
@@ -14,6 +15,9 @@ namespace School.Models
        public string Email { get; set; }
        public string Address { get; set; }
        public float GPA { get; set; }
-       public DateTime BirthDate { get; set; }
+       public DateTime? BirthDate { get; set; }
+
+       public int ClassId { get; set; }
+       public Class Class { get; set; }
     }
 }
